@@ -1,0 +1,22 @@
+[project]
+name = "day5-task4-integration-tests"
+version = "1.0.0"
+description = "Customer API and Webhook Integration Testing"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv",
+    "email-validator"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "httpx"
+]
